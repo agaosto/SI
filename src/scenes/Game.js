@@ -119,7 +119,7 @@ export default class Game extends Phaser.Scene {
         this.music = this.sound.add("music");
         this.music.play({
             mute: false,
-            volume: 0.4,
+            volume: 0.1,
             loop: true
         })
     }
@@ -130,7 +130,7 @@ export default class Game extends Phaser.Scene {
         if (touchingDown) {
             this.player.setVelocityY(-300)
             this.player.setTexture('char-jump')
-            this.sound.play('jump')
+            this.sound.play('jump', {volume: 0.2})
         }
 
         const velocityY = this.player.body.velocity.y
