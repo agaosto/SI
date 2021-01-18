@@ -96,7 +96,7 @@ export default class Game extends Phaser.Scene {
         .setPadding(10, 5)
         .setShadow(1, 1, '#fff')
         
-        this.add.text(240, 0, 'Poziooooom 1 - masa, kilogram [kg]', {
+        this.add.text(240, 0, 'Poziom 1 - masa, kilogram [kg]', {
             fontFamily: 'Bangers',
             fontSize: '24px',
             color: '#000'
