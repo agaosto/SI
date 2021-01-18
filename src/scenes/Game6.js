@@ -101,7 +101,7 @@ export default class Game6 extends Phaser.Scene {
         if (touchingDown) {
             this.player.setVelocityY(-300)
             this.player.setTexture('char-jump')
-            this.sound.play('jump')
+            this.sound.play('jump', {volume: 0.2})
         }
 
         const velocityY = this.player.body.velocity.y
