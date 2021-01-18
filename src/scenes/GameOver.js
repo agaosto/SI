@@ -12,7 +12,7 @@ export default class GameOver extends Phaser.Scene {
     create() {
         this.add.image(240, 320, 'background')
 
-        this.sound.play('warning')
+        this.sound.play('warning', {volume: 0.3})
 
         const width = this.scale.width
         const height = this.scale.height
