@@ -136,7 +136,7 @@ export default class Game5 extends Phaser.Scene {
             this.scene.start('game-over')
         }
 
-        if(this.itemsCollected > 11) {
+        if(this.itemsCollected > 49) {
             this.cameras.main.fadeOut(1000);
             this.scene.start('game6', {itemsCollected: this.itemsCollected})
         }
