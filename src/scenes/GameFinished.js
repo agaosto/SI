@@ -12,7 +12,7 @@ export default class GameFinished extends Phaser.Scene {
     create() {
         this.add.image(240, 320, 'background')
 
-        this.sound.play('winner')
+        this.sound.play('winner', {volume: 0.4})
 
         const width = this.scale.width
         const height = this.scale.height
